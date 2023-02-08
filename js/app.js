@@ -9,9 +9,9 @@ let userNumber
 
 // Continuiamo a chiedere un numero all’utente finchè non avremo ottenuto 10 numeri dispari. 
 
-while (odds.length < [10]) {
+while (odds.length < 10) {
 
-    userNumber = prompt('Inserisci un numero')
+    userNumber = parseInt(prompt('Inserisci un numero')) 
 
     // Tutti gli altri valori li scartiamo (numeri pari ed eventuali NaN).
     if ((!isNaN(userNumber)) && (userNumber % 2 != 0)) {
@@ -28,6 +28,7 @@ while (odds.length < [10]) {
 
 for (let i = 0; i < odds.length; i++) {
 
-    console.log(odds[i])
+    const currentNumber = odds[i]
+    console.log(currentNumber)
 }
 
